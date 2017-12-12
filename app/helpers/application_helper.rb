@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    ViewToolLillywhite::Renderer.copyright "Supe Lillywhite", "All rights reserved"
+  end
+
 end
