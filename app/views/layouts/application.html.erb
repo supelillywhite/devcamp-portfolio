@@ -20,6 +20,16 @@
 
         <div class="cover-container">
 
+          <%= video_tag(
+            'surf.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'screenshot.png'
+            )
+            %>
+
           <%= render "shared/application_nav" %>
 
           <%= yield %>
