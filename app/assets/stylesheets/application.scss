@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -216,6 +216,20 @@ body {
 }
 
 .contact-opacity {
+  opacity: 0.7;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
   opacity: 0.7;
 }
 
