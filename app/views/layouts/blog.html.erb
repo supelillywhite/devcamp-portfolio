@@ -6,10 +6,13 @@
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+    
+    <%= favicon_link_tag 'favicons/other_favicon.ico' %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
+
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -30,8 +33,6 @@
       <%= render 'shared/blog_footer' %>
 
       <%= alerts %>
-
-      <%= source_helper("blog") %>
     </div>
   </body>
 </html>

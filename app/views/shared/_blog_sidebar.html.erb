@@ -3,6 +3,15 @@
     <h4>About Me</h4>
     <p>With over two full weeks of experience in developing web apps, I'm pretty much the greatest choice in the world to build your site. What could go wrong?</p>
   </div>
+
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
   
   <div class="sidebar-module">
     <h4>Follow Me On</h4>
