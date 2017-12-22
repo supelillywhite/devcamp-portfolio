@@ -209,9 +209,6 @@ body {
 }
 
 .about-image {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
   width: 300px;
 }
 
@@ -250,31 +247,26 @@ body {
   text-decoration: none;
 }
 
-.about-card > .card {
-  background: rgba(204, 204, 204, 0.6);
+.app-card-container {
+  color: black;
+  text-align: left;
 }
 
-.about-card-top {
-  color: #37393d;
-  padding: 15px 10px 0px 10px;
+.app-card-container > .card {
+  padding: 40px;
 }
 
-.about-card-bottom {
-  color: #37393d;
-  padding: 0px 10px 0px 10px;
-  margin-bottom: 15px;
+.profile-image {
+  border: 1px solid grey;
+  width: 300px;
 }
 
-.contact-card > .card {
-  padding: 10px 0px 0px 0px;
-  background: rgba(204, 204, 204, 0.6);
-  color: #37393d;
-  width: 20rem;
-  margin: auto;
+.app-card-container a {
+  color: blue;
 }
 
-.contact-card a {
-  color: #37393d;
+.contact-card {
+  margin-top: 100px;
 }
 
 
