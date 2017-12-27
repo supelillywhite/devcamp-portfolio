@@ -7,6 +7,9 @@
       <div class="col-md-4">
         <%= image_tag "blackrocks2.jpg", alt: "Profile Image", class: "profile-image" %>
 
+        <hr>
+
+        <h3 id="focus">Areas of Focus</h3>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
@@ -55,6 +58,8 @@
           </button>
         </p>
 
+        <hr>
+
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
@@ -66,12 +71,32 @@
           </div>
 
           <div class="collapse" id="education">
-            <div class="card card-block">
-              School 1
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "USU.png", alt: "USU logo" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Utah State University</h3>
+                <p class="about-text">BS of History and Business</p>
+                <p class="about-text">May, 2012</p>
+                <p class="about-text">Cumulative GPA 3.86</p>
+              </div>
             </div>
-            <div class="card card-block">
-              School 2
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "DSU.png", alt: "USU logo" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Dixie State University</h3>
+                <p class="about-text">AS of General Education</p>
+                <p class="about-text">December, 2008</p>
+                <p class="about-text">Cumulative GPA 3.89</p>
+              </div>
             </div>
+
           </div>
         </p>
       </div>
