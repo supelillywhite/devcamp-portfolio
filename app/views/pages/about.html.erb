@@ -36,7 +36,7 @@
 
         <p>
           <button
-            class="btn btn-primary"
+            class="btn btn-info"
             type="button"
             data-toggle="collapse"
             data-target="#jobHistory"
@@ -47,7 +47,7 @@
           </button>
 
           <button
-            class="btn btn-primary"
+            class="btn btn-info"
             type="button"
             data-toggle="collapse"
             data-target="#education"
@@ -62,15 +62,78 @@
 
         <p>
           <div class="collapse" id="jobHistory">
-            <div class="card card-block">
-              Jobssesssss 1
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="about-class-title">Job History</h3>
+              </div>
+              <div class="col-md-8">
+                <p>I've been very blessed to work at some great places over the years. Here are some of my favorites.</p>
+              </div>
             </div>
-            <div class="card card-block">
-              Jobssesssss 2
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "DSUClimb.png", alt: "DSU Climbing logo", width:"300" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Dixie State University</h3>
+                <p class="about-text">Adjunct Professor of Rock Climbing and Mountain Biking</p>
+              </div>
             </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "campsaver.png", alt: "Campsaver logo", width:"300" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Campsaver LLC</h3>
+                <p class="about-text">Buyer for Rock Climbing Products for www.campsaver.com</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "SEED.png", alt: "SEED logo", width:"300" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">USU SEED Program</h3>
+                <p class="about-text">Loan Officer and Assistant to the Program Director</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "paragon.jpg", alt: "Paragon logo", width:"300" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Paragon Adventures</h3>
+                <p class="about-text">Rock Climbing, Mountain Biking, Canyoneering Guide</p>
+              </div>
+            </div>
+
+            <hr>
+
           </div>
 
           <div class="collapse" id="education">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="about-class-title">Education</h3>
+              </div>
+              <div class="col-md-8">
+                <p>Higher education has been a big and enjoyable part of my adult life. Here are a few of the places I've studied over the past several years.</p>
+              </div>
+            </div>
+
+            <hr>
             <div class="row">
               <div class="col-md-6">
                 <%= image_tag "USU.png", alt: "USU logo" %>
@@ -87,7 +150,7 @@
 
             <div class="row">
               <div class="col-md-6">
-                <%= image_tag "DSU.png", alt: "USU logo" %>
+                <%= image_tag "DSU.png", alt: "DSU logo" %>
               </div>
               <div class="col-md-6">
                 <h3 class="about-title">Dixie State University</h3>
@@ -96,6 +159,21 @@
                 <p class="about-text">Cumulative GPA 3.89</p>
               </div>
             </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "bottega.png", alt: "Bottega logo" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Bottega Tech</h3>
+                <p class="about-text">Full Stack Development Program</p>
+                <p class="about-text">February, 2018</p>
+              </div>
+            </div>
+
+            <hr>
 
           </div>
         </p>
