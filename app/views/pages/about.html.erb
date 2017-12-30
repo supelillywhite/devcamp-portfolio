@@ -1,11 +1,11 @@
 <div class="app-card-container contact-opacity">
   <div class="card">
-    <h1>About Me</h1>
-
-    <hr>
+    
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "blackrocks2.jpg", alt: "Profile Image", class: "profile-image" %>
+        <div class="about-pic-height">
+          <%= image_tag "blackrocks2.jpg", alt: "Profile Image", class: "profile-image" %>
+        </div>
 
         <hr>
 
@@ -30,33 +30,39 @@
       </div>
 
       <div class="col-md-8">
-        <p class="about-card-top">With over two full weeks of experience in developing web apps, I'm pretty much the greatest choice in the world to build your site. What could go wrong?</p>
+        <div class="about-description-height">
+          <h1>About Me</h1>
+          <div class="about-description-text">
+            <p class="about-card-top">With over two full weeks of experience in developing web apps, I'm pretty much the greatest choice in the world to build your site. What could go wrong?</p>
 
-        <p class="about-card-bottom">Regardless of my experience level, you can be sure that your site will be put together carefully, thoughtfully and that I'll come up with some cool ideas to make your site standout from your competitors.</p>
+            <p class="about-card-bottom">Regardless of my experience level, you can be sure that your site will be put together carefully, thoughtfully and that I'll come up with some cool ideas to make your site standout from your competitors.</p>
+          </div>
 
-        <p>
-          <button
-            class="btn btn-info"
-            type="button"
-            data-toggle="collapse"
-            data-target="#jobHistory"
-            aria-expanded="false"
-            aria-controls="jobHistory"
-          >
-            Job History
-          </button>
 
-          <button
-            class="btn btn-info"
-            type="button"
-            data-toggle="collapse"
-            data-target="#education"
-            aria-expanded="false"
-            aria-controls="education"
-          >
-            Education
-          </button>
-        </p>
+          <p>
+            <button
+              class="btn btn-info"
+              type="button"
+              data-toggle="collapse"
+              data-target="#jobHistory"
+              aria-expanded="false"
+              aria-controls="jobHistory"
+            >
+              Job History
+            </button>
+
+            <button
+              class="btn btn-info"
+              type="button"
+              data-toggle="collapse"
+              data-target="#education"
+              aria-expanded="false"
+              aria-controls="education"
+            >
+              Education
+            </button>
+          </p>
+        </div>
 
         <hr>
 
@@ -134,6 +140,20 @@
             </div>
 
             <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <%= image_tag "bottega.png", alt: "Bottega logo" %>
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Bottega Tech</h3>
+                <p class="about-text">Full Stack Development Program</p>
+                <p class="about-text">February, 2018</p>
+              </div>
+            </div>
+
+            <hr>
+
             <div class="row">
               <div class="col-md-6">
                 <%= image_tag "USU.png", alt: "USU logo" %>
@@ -157,19 +177,6 @@
                 <p class="about-text">AS of General Education</p>
                 <p class="about-text">December, 2008</p>
                 <p class="about-text">Cumulative GPA 3.89</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row">
-              <div class="col-md-6">
-                <%= image_tag "bottega.png", alt: "Bottega logo" %>
-              </div>
-              <div class="col-md-6">
-                <h3 class="about-title">Bottega Tech</h3>
-                <p class="about-text">Full Stack Development Program</p>
-                <p class="about-text">February, 2018</p>
               </div>
             </div>
 
