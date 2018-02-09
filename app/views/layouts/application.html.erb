@@ -19,9 +19,13 @@
   <body>
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+      <div class="site-wrapper-inside">
 
         <div class="cover-container">
+
+          <%= render "shared/application_nav" %>
+
+
 
           <%= video_tag(
             'earth.mp4',
@@ -33,11 +37,12 @@
             )
             %>
 
-          <%= render "shared/application_nav" %>
+          
 
           <%= yield %>
-
-          <%= render "shared/application_footer" %>
+          <div class="footer-bottom">
+            <%= render "shared/application_footer" %>
+          </div>
           <%= alerts %>
 
         </div>
